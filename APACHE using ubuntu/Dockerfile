@@ -1,6 +1,6 @@
 FROM ubuntu:12.04
 MAINTAINER sachin
-RUN apt-get update && apt-get install -y apache2 && apt-get clean && rm -rf /var/lib/apt/list/*
+RUN apt-get install -y apache* && apt-get clean && rm -rf /var/lib/apt/list/*
 
 ENV APACHE_RUN_USER webuser
 ENV APACHE_RUN_GROUP webuser
